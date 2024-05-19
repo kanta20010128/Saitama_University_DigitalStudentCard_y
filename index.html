@@ -1,0 +1,94 @@
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="デジタル学生証">
+
+        <title>埼玉大学デジタル学生証</title>
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="top">
+            <p class="u-p">身分証</p>
+            <img src="img/icon_059810_256.png" alt="戻るボタン">
+        </div>
+
+        <div class="container">
+            <div class="time">
+                <p class="not">時刻表示のないものは無効</p>
+                <p id="realtime"></p>
+            </div>
+    
+            <div class="main">
+                <div>
+                    <div class="u-name">
+                        <img src="img/top_logo.png" alt="ロゴ">
+                        <div>
+                            <p class="p1">埼玉大学学生証</p>
+                            <p class="p2">(身分証明証書写)</p>
+                        </div>
+                    </div>
+        
+                    <div class="main-img">
+                        <img src="img/IMG_2809.JPG" alt="証明写真">
+                    </div>
+        
+                    <div class="info">
+                        <div class="class">
+                            <p>工学部</p>
+                            <p>応用化学</p>
+                        </div>
+            
+                        <div class="number">
+                            <p>学籍番号 21KJ015</p>
+                        </div>
+            
+                        <div class="name">
+                            <p>久木田　悠馬</p>
+                        </div>
+            
+                        <div class="birth">
+                            <p>平成14年10月31日生(21歳)</p>
+                        </div>
+                    </div>
+        
+                    <div class="uni">
+                        <p class="uni1">埼玉県さいたま市桜区下大久保２５５</p>
+                        <p class="uni2">埼玉大学長</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="day">
+                <div class="day1">
+                    <p>発行日</p>
+                    <p>2021年04月21日</p>
+                </div>
+                <div class="day1">
+                    <p>有効期限</p>
+                    <p>2025年03月31日</p>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            function showClock() {
+              let nowTime = new Date();
+              var now = new Date();
+	          let year = now.getFullYear();
+	          let mon = now.getMonth()+1;
+	          let day = now.getDate();
+              let nowHour = nowTime.getHours();
+              let nowMin  = nowTime.getMinutes();
+              let nowSec  = nowTime.getSeconds();
+              let msg = year + "/" + mon + "/" + day + " " + nowHour + ":" + nowMin + ":" + nowSec;
+              document.getElementById("realtime").innerHTML = msg;
+            }
+            setInterval('showClock()',1000);
+        </script>
+
+    </body>
+</html>

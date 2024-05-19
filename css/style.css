@@ -1,0 +1,169 @@
+body {
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    margin: 0;
+    background: #eaebef;
+    height: 100svh;
+}
+
+p {
+    margin: 0;
+}
+
+.top {
+    background: #fff;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    position: relative;
+}
+
+.top > img {
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%)
+}
+
+.u-p {
+    color: #323b4a;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 94vh;
+}
+
+.time {
+    margin: 10px auto;
+}
+
+#realtime {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4f5e74;
+    text-align: right;
+    margin-right: 25px;
+}
+
+.not {
+    font-size: 20px;
+    text-align: center;
+    color: #bc5046;
+}
+
+.main {
+    background: #c0d4ea;
+    margin: 0 20px 25px 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.main > div {
+    background-image: url(../img/ロゴpng.png);
+    background-size: 200px;
+    background-position: center bottom 60px;
+    background-repeat: no-repeat;
+}
+
+.u-name {
+    display: flex;
+    font-family: "Hiragino Mincho ProN", "YuMincho", "Yu Mincho", "MS PMincho", serif;
+}
+
+.u-name > img {
+    width: 50%;
+    object-fit: contain;
+}
+
+.p1 {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-left: 20px;
+    color: #4f5e74;
+}
+
+.p2 {
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-left: 20px;
+    color: #4f5e74;
+}
+
+.main-img {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.main-img > img {
+    width: 30vw;
+    border: #323b4a solid 1px;
+    padding: 2px;
+}
+
+.info {
+    margin-left: 20px;
+}
+
+.class {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.number {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.birth {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.uni {
+    display: flex;
+    justify-content: end;
+    font-family: "Hiragino Mincho ProN", "YuMincho", "Yu Mincho", "MS PMincho", serif;
+}
+
+.uni1 {
+    align-self: center;
+    font-size: 10px;
+}
+
+.uni2 {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin: auto 20px auto 10px;
+}
+
+.day {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.day1 {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.day1 > p {
+    text-align: left;
+}
